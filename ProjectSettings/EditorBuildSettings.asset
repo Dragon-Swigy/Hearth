@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Scenes/test5.unity
     guid: 8622ad424a38ecd418c1dda1254bd0d0
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Maze_Game.unity
+    guid: 9060c49d60aae3347a0b120be2467fcf
   m_configObjects: {}
