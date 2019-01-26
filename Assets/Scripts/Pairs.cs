@@ -12,6 +12,7 @@ public class Pairs : MonoBehaviour
 
     public Button Return;
     public Image YouWin;
+    public Text clickCount;
 
     private bool card1Uncovered = false;
     private bool card2Uncovered = false;
@@ -22,10 +23,13 @@ public class Pairs : MonoBehaviour
     private bool m2 = false;
 
     private int uncovered;
+    private int counter;
 
     void Start()
     {
         uncovered = 0;
+        counter = 0;
+        clickCount.text = "";
 
         Return.gameObject.SetActive(false);
         YouWin.gameObject.SetActive(false);
@@ -33,9 +37,15 @@ public class Pairs : MonoBehaviour
 
     void FixedUpdate()
     {
+        SetCountText();
         matched();
         win();
         reset();
+    }
+
+    public void Count()
+    {
+        counter++;
     }
 
     public void uncoverCard1()
@@ -114,7 +124,12 @@ public class Pairs : MonoBehaviour
         }
     }
 
-    public void win()
+    void SetCountText()
+    {
+        clickCount.text = "Clicks left: " + counter.ToString();
+    }
+
+        public void win()
     {
         Debug.Log(m1);
         Debug.Log(m2);
@@ -123,6 +138,11 @@ public class Pairs : MonoBehaviour
             Return.gameObject.SetActive(true);
             YouWin.gameObject.SetActive(true);
         }
+    }
+
+    public void lose()
+    {
+
     }
 
 }
