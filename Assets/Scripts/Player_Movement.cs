@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Player_Movement : MonoBehaviour
 {
     public float speed;
-    public Text Win_Text;
     public Button Return;
+    public Image YouWin;
 
     private Rigidbody rb;
 
@@ -15,8 +15,8 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Win_Text.text = "";
         Return.gameObject.SetActive(false);
+        YouWin.gameObject.SetActive(false);
     }
 
     void FixedUpdate()
@@ -26,17 +26,15 @@ public class Player_Movement : MonoBehaviour
         float move_Horizontal = Input.GetAxis("Horizontal");
         float move_Vertical = Input.GetAxis("Vertical");
 
-        transform.Translate(new Vector3(move_Horizontal, 0f, move_Vertical) * Time.deltaTime * speed);        
+        transform.Translate(new Vector3(-move_Vertical, 0f, move_Horizontal) * Time.deltaTime * speed);        
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Finish"))
         {
-            Win_Text.text = "You Win!!!?";
             Return.gameObject.SetActive(true);
-            GameObject.Find("Return").GetComponentInChildren<Text>().text = "la di da";
-
+            YouWin.gameObject.SetActive(true);
         }
     }
 }

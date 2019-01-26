@@ -19,7 +19,8 @@ public class MapMenu : MonoBehaviour
     public void Cottage() //assign to Cottage
     {
         Debug.Log("Cottage!");
-        SceneManager.LoadScene("test3");
+        SceneManager.LoadScene("Maze_Game");
+        
     }
     public void Mansion() //assign to Mansion
     {
