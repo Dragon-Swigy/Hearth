@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Player_Movement : MonoBehaviour
 {
     public float speed;
-    public Text Win_Text;
     public Button Return;
+    public Image YouWin;
 
     private Rigidbody rb;
 
@@ -15,8 +15,8 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Win_Text.text = "";
         Return.gameObject.SetActive(false);
+        YouWin.gameObject.SetActive(false);
     }
 
     void FixedUpdate()
@@ -33,8 +33,8 @@ public class Player_Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Finish"))
         {
-            Win_Text.text = "You Win!!!?";
             Return.gameObject.SetActive(true);
+            YouWin.gameObject.SetActive(true);
         }
     }
 }
