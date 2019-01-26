@@ -26,7 +26,7 @@ public class Player_Movement : MonoBehaviour
         float move_Horizontal = Input.GetAxis("Horizontal");
         float move_Vertical = Input.GetAxis("Vertical");
 
-        transform.Translate(new Vector3(move_Horizontal, 0f, move_Vertical) * Time.deltaTime * speed);        
+        transform.Translate(new Vector3(-move_Vertical, 0f, move_Horizontal) * Time.deltaTime * speed);        
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,8 +35,6 @@ public class Player_Movement : MonoBehaviour
         {
             Win_Text.text = "You Win!!!?";
             Return.gameObject.SetActive(true);
-            GameObject.Find("Return").GetComponentInChildren<Text>().text = "la di da";
-
         }
     }
 }
