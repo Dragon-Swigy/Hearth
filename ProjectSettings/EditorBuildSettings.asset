@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: ac8f3a4cf43bd5d478df4a18e591a349
   - enabled: 0
-    path: Assets/Scenes/PoppyHouse-Korenna.unity
+    path: Assets/Scenes/Cottage.unity
     guid: ff98f3bdb56179c49b179e9a58a81060
   m_configObjects: {}
