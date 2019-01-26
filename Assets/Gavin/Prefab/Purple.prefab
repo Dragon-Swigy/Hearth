@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7244929996269778522}
   - component: {fileID: 6167450043470632548}
   - component: {fileID: 7959450222632212476}
+  - component: {fileID: 7846452803165225009}
   m_Layer: 0
   m_Name: Purple
   m_TagString: Blocks
@@ -108,3 +109,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &7846452803165225009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3747079396137209942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cc7558f3eee614fb1f524115f3f57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
