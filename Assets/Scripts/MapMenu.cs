@@ -9,7 +9,7 @@ public class MapMenu : MonoBehaviour
     public void OptionsMenu() //assign this to the "start" button
     {
         Debug.Log("Options!"); 
-        SceneManager.LoadScene("test1");
+        SceneManager.LoadScene("OptionsMenu");
     }
   public void Victorian() //assign to Victorian House
     {
