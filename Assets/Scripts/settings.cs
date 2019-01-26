@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class settings : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class settings : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMix.SetFloat("Volume", volume);
+    }
+
+    public void Return() //assign this to the "start" button
+    {
+        SceneManager.LoadScene("MapScreen");
     }
 
     public void QuitGame() //assign this to the "log out" button
