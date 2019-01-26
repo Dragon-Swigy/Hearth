@@ -7,6 +7,6 @@ public class Credits : MonoBehaviour
 {
     public void Return()
     {
-        SceneManager.LoadScene("MapScreen");
+        SceneManager.LoadScene("OptionsMenu");
     }
 }

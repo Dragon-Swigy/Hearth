@@ -335,7 +335,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Our favorite \nTeam Leader:\n\tKameron King\n\nProgrammers:\n\tKameron
     King\n\tGavin\n\tLuis\n\nArtists:\n\tChannon\n\tCrystal Arnold\n\tDustin\n\tLukas
-    Dush\n\tKenzie?\n\tKorrina\n\t\nMusic:\n\t\"Too Cool\" Kevin MacLeod (incompetech.com)\r\nLicensed
+    Dush\n\tKenzie?\n\tKorenna\n\t\nMusic:\n\t\"Too Cool\" Kevin MacLeod (incompetech.com)\r\nLicensed
     under Creative Commons: By Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\r\n\"Chill
     Wave\" Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By
     Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\r\n\"Angel
@@ -970,8 +970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.0999756, y: -13.100006}
-  m_SizeDelta: {x: -974, y: -194.3}
+  m_AnchoredPosition: {x: 1.960022, y: -8.779999}
+  m_SizeDelta: {x: -892.81, y: -185.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213090431
 MonoBehaviour:
