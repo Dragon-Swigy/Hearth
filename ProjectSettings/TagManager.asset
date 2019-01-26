@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Blocks
+  - Yellow
+  - Red
+  - Blue
+  - Green
+  - Purple
   - Player Camera
   layers:
   - Default
