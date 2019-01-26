@@ -9,7 +9,7 @@ public class MapMenu : MonoBehaviour
     public void OptionsMenu() //assign this to the "start" button
     {
         Debug.Log("Options!"); 
-        SceneManager.LoadScene("test1");
+        SceneManager.LoadScene("OptionsMenu");
     }
   public void Victorian() //assign to Victorian House
     {
@@ -19,11 +19,18 @@ public class MapMenu : MonoBehaviour
     public void Cottage() //assign to Cottage
     {
         Debug.Log("Cottage!");
-        SceneManager.LoadScene("test3");
+        SceneManager.LoadScene("CottageBio");
+        
     }
     public void Mansion() //assign to Mansion
     {
         Debug.Log("Mansion!");
         SceneManager.LoadScene("test4");
+    }
+
+    public void MapScreen() //assign to Mansion
+    {
+        Debug.Log("Mansion!");
+        SceneManager.LoadScene("MapScreen");
     }
 }

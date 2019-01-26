@@ -10,6 +10,7 @@ TagManager:
   - Blue
   - Green
   - Purple
+  - Player Camera
   layers:
   - Default
   - TransparentFX
