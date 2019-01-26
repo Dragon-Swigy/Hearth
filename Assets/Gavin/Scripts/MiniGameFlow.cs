@@ -8,6 +8,10 @@ public class MiniGameFlow : MonoBehaviour
     public Transform[] blocks;
 
     private int randomIndex;
+    private int randomIndex2;
+
+    public static float destroyedGemX = -10;
+    public static string lockDelay = "n";
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +30,19 @@ public class MiniGameFlow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (destroyedGemX != -10)
+        {
+            randomIndex2 = Random.Range(0,5);
+            Instantiate(blocks[randomIndex2], new Vector3(destroyedGemX, 12, 0), blocks[randomIndex2].rotation);
+            destroyedGemX = -10;
+            StartCoroutine(resetDelay());
+        }
     }
+
+    IEnumerator resetDelay()
+    {
+        yield return new WaitForSeconds(2);
+        lockDelay = "n";
+    }
+
 }

@@ -16,8 +16,12 @@ public class GemControl : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-        
+        if (MiniGameFlow.lockDelay == "n") {
+            MiniGameFlow.destroyedGemX = transform.position.x;
+            Destroy(gameObject);
+            MiniGameFlow.lockDelay = "y";
+        }
     }
 }
