@@ -9,14 +9,14 @@ public class MapMenu : MonoBehaviour
     public Button trapHouse;
     public Button apartmentHouse;
     public Button cottageHouse;
-    //public Button mansionHouse;
+    public Button mansionHouse;
 
     void Update()
     {
         trapHouse.interactable = !IsWin.Instance.trapHouseWin;
         apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
         cottageHouse.interactable = !IsWin.Instance.cottageWin;
-        //mansionHouse.interactable = !Is.Win.Instance.mansionWin
+        mansionHouse.interactable = !IsWin.Instance.mansionWin;
     }
     
     // Start is called before the first frame update

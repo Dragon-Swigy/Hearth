@@ -192,6 +192,7 @@ public class Board : MonoBehaviour
     void winCon()
     {
         IsWin.Instance.AddWin();
+        IsWin.Instance.mansionWin = true;
         Debug.Log("Kill me.");
     }
 
