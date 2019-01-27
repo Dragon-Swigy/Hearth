@@ -13,7 +13,7 @@ public class Board : MonoBehaviour
     public Text countText;
 
     private int count;
-    public bool uhh = false;
+    private bool won = false;
 
     private BackgroundTile[,] allTiles;
     public GameObject[,] allDots;
