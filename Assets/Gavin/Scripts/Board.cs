@@ -11,9 +11,9 @@ public class Board : MonoBehaviour
     public GameObject tilePrefab;
     public GameObject[] blocks;
     public Text countText;
+    public bool uhh = false;
 
     private int count;
-    private bool won = false;
 
     private BackgroundTile[,] allTiles;
     public GameObject[,] allDots;
