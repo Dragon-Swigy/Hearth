@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 5106253093574096364}
   - component: {fileID: 6442903207445889551}
   - component: {fileID: 7244929996269778522}
-  - component: {fileID: 6167450043470632548}
-  - component: {fileID: 7959450222632212476}
   - component: {fileID: 7846452803165225009}
+  - component: {fileID: 2540856231873182796}
   m_Layer: 0
   m_Name: Purple
   m_TagString: Purple
@@ -80,35 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6167450043470632548
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3747079396137209942}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0196, y: 0.0196, z: 0.0196}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7959450222632212476
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3747079396137209942}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 2
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
 --- !u!114 &7846452803165225009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +91,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cc7558f3eee614fb1f524115f3f57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGameFlow: {fileID: 0}
+  row: 0
+  col: 0
+--- !u!65 &2540856231873182796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3747079396137209942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010000003, y: 0.012723763, z: 0.01429152}
+  m_Center: {x: 0, y: 0, z: 0}
