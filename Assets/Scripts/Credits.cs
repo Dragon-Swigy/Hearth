@@ -9,4 +9,11 @@ public class Credits : MonoBehaviour
     {
         SceneManager.LoadScene("OptionsMenu");
     }
+
+    public void QuitGame() //assign this to the "log out" button
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+
+    }
 }

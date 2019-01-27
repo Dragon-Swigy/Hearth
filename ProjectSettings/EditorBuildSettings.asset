@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGames/Pairs_Game.unity
     guid: 32d28ec7ae960944e80ce117b561a644
+  - enabled: 1
+    path: Assets/Scenes/Credits_final.unity
+    guid: fe808e92a363ebc4c8e56b0183096aa4
   m_configObjects: {}
