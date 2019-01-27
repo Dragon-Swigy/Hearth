@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Board : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Board : MonoBehaviour
     public int height;
     public GameObject tilePrefab;
     public GameObject[] blocks;
+    public Text countText;
+
+    private int count;
 
     private BackgroundTile[,] allTiles;
     public GameObject[,] allDots;
@@ -18,6 +22,9 @@ public class Board : MonoBehaviour
         allTiles = new BackgroundTile[width, height];
         allDots = new GameObject[width, height];
         setUp();
+
+        count = 0;
+        countText.text = "Score: " + count.ToString(); 
     }
 
     private void setUp()
@@ -85,6 +92,12 @@ public class Board : MonoBehaviour
         if (allDots[column, row].GetComponent<GemControl>().isMatched)
         {
             Destroy(allDots[column, row]);
+            count++;
+            countText.text = "Score: " + count.ToString();
+            if (count >= 100)
+            {
+                winCon();
+            }
             allDots[column, row] = null;
         }
     }
@@ -174,6 +187,12 @@ public class Board : MonoBehaviour
             maxIterations++;
         }
         maxIterations = 0;
+    }
+
+    void winCon()
+    {
+        IsWin.Instance.AddWin();
+        Debug.Log("Kill me.");
     }
 
 }

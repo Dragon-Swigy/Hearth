@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 380519001}
   - component: {fileID: 380519000}
   m_Layer: 5
-  m_Name: Text
+  m_Name: CountText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,3 +560,4 @@ MonoBehaviour:
   - {fileID: 3747079396137209942, guid: c986f6462f22ac447a7c1c5903543fda, type: 3}
   - {fileID: 2792970963701324795, guid: def6a044bb03a354680aabf539786b2e, type: 3}
   - {fileID: 7188379044889337053, guid: 3d07f17f4b17f3443995056f83ab77a3, type: 3}
+  countText: {fileID: 380519000}
