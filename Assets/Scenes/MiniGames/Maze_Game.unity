@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8846,6 +8846,7 @@ GameObject:
   - component: {fileID: 1194127404}
   - component: {fileID: 1194127403}
   - component: {fileID: 1194127407}
+  - component: {fileID: 1194127408}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8948,6 +8949,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1100dce72c02fa64c889856c3db0f9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1194127408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194127402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7259eb0d7f878764ba602c226425a449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 2025323669}
 --- !u!4 &1200143541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6885707558437749043, guid: 57d2cde539b20f4499c3db2ff8a1a058,
