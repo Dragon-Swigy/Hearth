@@ -15,8 +15,7 @@ public class Pairs : MonoBehaviour
     public Button Return;
     public Image YouWin;
     public Text clickCount;
-    //public Image YouLose;
-    public Text YouLose;
+    public Image YouLose;
 
     private bool card1Uncovered = false;
     private bool card2Uncovered = false;
@@ -139,32 +138,37 @@ public class Pairs : MonoBehaviour
 
                 uncovered = 0;
                 m1 = true;
-                //reset();
+                reset();
             }
         }
 
-        if(!m2)
+        if (!m2)
         {
             if(card2Uncovered && card4Uncovered)
-        {
+            {
+                Debug.Log(card4Uncovered);
+                Debug.Log(card2Uncovered);
                 Destroy(Card2.gameObject);
                 Destroy(Card4.gameObject);
 
                 uncovered = 0;
                 m2 = true;
-                //reset();
+                reset();
             }
         }
-
+        
         if(!m3)
         {
-            if(card5Uncovered && card6Uncovered)
+            if(card6Uncovered && card5Uncovered)
             {
+                Debug.Log(card5Uncovered);
+                Debug.Log(card6Uncovered);
                 Destroy(Card5.gameObject);
                 Destroy(Card6.gameObject);
 
                 uncovered = 0;
                 m3 = true;
+                reset();
             }
         }
     }
@@ -172,14 +176,34 @@ public class Pairs : MonoBehaviour
 
     public void reset()
     {
-        if(uncovered > 1)
+        if(uncovered == 2)
         {
-            Card1.gameObject.SetActive(true);
-            Card2.gameObject.SetActive(true);
-            Card3.gameObject.SetActive(true);
-            Card4.gameObject.SetActive(true);
-            Card5.gameObject.SetActive(true);
-            Card6.gameObject.SetActive(true);
+            if(Card1 != null)
+            {
+                Card1.gameObject.SetActive(true);
+            }
+
+            if (Card2 != null)
+            {
+                Card2.gameObject.SetActive(true);
+            }
+            if (Card3 != null)
+            {
+                Card3.gameObject.SetActive(true);
+            }
+            if (Card4 != null)
+            {
+                Card4.gameObject.SetActive(true);
+            }
+            if (Card5 != null)
+            {
+                Card5.gameObject.SetActive(true);
+            }
+            if (Card6 != null)
+            {
+                Card6.gameObject.SetActive(true);
+            }
+
 
             card1Uncovered = false;
             card2Uncovered = false;
@@ -187,7 +211,6 @@ public class Pairs : MonoBehaviour
             card4Uncovered = false;
             card5Uncovered = false;
             card6Uncovered = false;
-
 
             uncovered = 0;
         }
@@ -200,8 +223,8 @@ public class Pairs : MonoBehaviour
 
     public void win()
     {
-        Debug.Log(m1);
-        Debug.Log(m2);
+        //Debug.Log(m1);
+        //Debug.Log(m2);
         if(m1 && m2 && m3)
         {
             Return.gameObject.SetActive(true);
