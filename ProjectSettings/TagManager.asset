@@ -53,3 +53,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Text Box
+    uniqueID: 2013661759
+    locked: 0
+  - name: UI
+    uniqueID: 3425110895
+    locked: 0
