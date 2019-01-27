@@ -9,7 +9,7 @@ public class MapMenu : MonoBehaviour
     public Button trapHouse;
     public Button apartmentHouse;
     public Button cottageHouse;
-    //public Button mansionHouse;
+    public Button mansionHouse;
 
     void Update()
     {
@@ -60,3 +60,10 @@ public class MapMenu : MonoBehaviour
         SceneManager.LoadScene("MapScreen");
     }
 }
+
+    void Update()
+    {
+        trapHouse.interactable = !IsWin.Instance.trapHouseWin;
+        apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
+        cottageHouse.interactable = !IsWin.Instance.cottageWin;
+        mansionHouse.interactable = !IsWin.Instance.mansionWin;
