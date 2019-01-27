@@ -19,7 +19,7 @@ public class MapMenu : MonoBehaviour
     public void Cottage() //assign to Cottage
     {
         Debug.Log("Cottage!");
-        SceneManager.LoadScene("CottageBio");
+        SceneManager.LoadScene("Cottage");
         
     }
     public void Mansion() //assign to Mansion
