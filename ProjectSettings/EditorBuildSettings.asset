@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 48eabc3dc83ed5840a3e912744e8575e
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 9df3fcae67ccd964d944735ec27b0da7
+  - enabled: 1
     path: Assets/Scenes/MapScreen.unity
     guid: ebc393811539b3343afe96d5b10e777e
   - enabled: 1

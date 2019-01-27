@@ -7,7 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     void Start()
     {
-        SceneManager.LoadScene("MapScreen");
+        SceneManager.LoadScene("StartScreen");
     }
     
 }
