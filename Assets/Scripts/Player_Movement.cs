@@ -11,7 +11,7 @@ public class Player_Movement : MonoBehaviour
     public Image YouLose;
 
     public Text timerText;
-    private float startTime;
+    public float startTime;
     private bool end = false;
 
     private Rigidbody rb;
@@ -65,6 +65,8 @@ public class Player_Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Finish"))
         {
+            IsWin.Instance.AddWin();
+            IsWin.Instance.cottageWin = true;
             Time.timeScale = 0f;
             Return.gameObject.SetActive(true);
             YouWin.gameObject.SetActive(true);

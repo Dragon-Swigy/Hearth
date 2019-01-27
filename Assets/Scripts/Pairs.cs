@@ -236,6 +236,7 @@ public class Pairs : MonoBehaviour
             if (m1 && m2 && m3)
             {
                 IsWin.Instance.AddWin();
+                IsWin.Instance.apartmentWin = true;
                 Return.gameObject.SetActive(true);
                 YouWin.gameObject.SetActive(true);
                 winGame = true;
