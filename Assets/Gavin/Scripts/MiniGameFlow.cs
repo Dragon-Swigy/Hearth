@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MiniGameFlow : MonoBehaviour
 {
-    public GemControl[,] grid = new GemControl[9,9];
+   /* public GemControl[,] grid = new GemControl[9,9];
 
     public Transform[] blocks;
     public List<GameObject> hor;
@@ -36,28 +36,22 @@ public class MiniGameFlow : MonoBehaviour
 
     void Update()
     {
-        /*if (destroyedGemX != -10)
-        {
-            randomIndex2 = Random.Range(0,5);
-            Instantiate(blocks[randomIndex2], new Vector3(destroyedGemX, 12, 0), blocks[randomIndex2].rotation);
-            destroyedGemX = -10;
-            StartCoroutine(resetDelay());
-        }*/
+       
     }
 
     public void findCombo(GemControl gem)
     {
-        int tempGreater = 0;
-        int tempLesser = 0;
-        int tempLower = 0;
-        int tempHigher = 0;
+        int leftRightHigh = 0;
+        int leftRightLow = 0;
+        int upDownLow = 0;
+        int upDownHigh = 0;
         hor.Add(gem.gameObject);
         for (int i = gem.col+1; i < 9; i++)
         {
             if (grid[gem.row, i] != null && grid[gem.row,i].GetComponent<Renderer>().material.color == gem.GetComponent<Renderer>().material.color)
             {
                 hor.Add(grid[gem.row, i].gameObject);
-                tempGreater = i;
+                leftRightHigh = i;
             }
             else
             {
@@ -69,7 +63,7 @@ public class MiniGameFlow : MonoBehaviour
             if (grid[gem.row, i] != null && grid[gem.row, i].GetComponent<Renderer>().material.color == gem.GetComponent<Renderer>().material.color)
             {
                 hor.Add(grid[gem.row, i].gameObject);
-                tempLesser = i;
+                leftRightLow = i;
             }
             else
             {
@@ -83,7 +77,7 @@ public class MiniGameFlow : MonoBehaviour
             if (grid[i, gem.col] && grid[i, gem.col].GetComponent<Renderer>().material.color == gem.GetComponent<Renderer>().material.color)
             {
                 ver.Add(grid[i, gem.col].gameObject);
-                tempHigher = i;
+                upDownHigh = i;
             }
             else
             {
@@ -95,7 +89,7 @@ public class MiniGameFlow : MonoBehaviour
             if (grid[i, gem.col] && grid[i, gem.col].GetComponent<Renderer>().material.color == gem.GetComponent<Renderer>().material.color)
             {
                 ver.Add(grid[i, gem.col].gameObject);
-                tempLower = i;
+                upDownLow = i;
             }
             else
             {
@@ -111,7 +105,7 @@ public class MiniGameFlow : MonoBehaviour
             {
                 Destroy(hor[i]);
             }
-            reIndexRow(gem.row, tempGreater, tempLesser);
+            reIndexRow(gem.row, leftRightHigh, leftRightLow);
         }
 
         if (ver.Count >= 3)
@@ -120,13 +114,13 @@ public class MiniGameFlow : MonoBehaviour
             {
                 Destroy(ver[i]);
             }
-            reIndexCol(gem.col, tempHigher, tempLower);
+            reIndexCol(gem.col, leftRightHigh, upDownLow, upDownHigh);
         }
     }
 
-    void reIndexRow(int row, int tempHigher, int tempLower)
+    void reIndexRow(int row, int leftRightHigh, int leftRightLow)
     {
-        for (int j = tempLower; j <= tempHigher; j++)
+        for (int j = leftRightLow; j <= leftRightHigh; j++)
         {
             for (int i = row; i < 9; i++)
             {
@@ -142,11 +136,11 @@ public class MiniGameFlow : MonoBehaviour
             }
         }
     }
-    void reIndexCol(int tempLower, int tempGreater, int tempLesser)
+    void reIndexCol(int column, int leftRightHigh, int upDownLow, int upDownHigh)
     {
-        for (int row = tempLower; row > 0; row--)
+        for (int row = column; row > 0; row--)
         {
-            grid[row, tempLower] = grid[(tempGreater - tempLesser) + row, tempLower];
+            grid[row, leftRightHigh] = grid[(upDownHigh - upDownLow) + row, leftRightHigh];
         }
     }
 
@@ -155,5 +149,5 @@ public class MiniGameFlow : MonoBehaviour
         yield return new WaitForSeconds(2);
         lockDelay = "n";
     }
-
+    */
 }
