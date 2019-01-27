@@ -15,7 +15,7 @@ public class settings : MonoBehaviour
 
     public void Return() //assign this to the "start" button
     {
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("MapScreen");
     }
 
     public void Credits()
