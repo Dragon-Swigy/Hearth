@@ -13,6 +13,9 @@ public class Board : MonoBehaviour
     public Text countText;
     public bool uhh = false;
 
+    public Image youWin;
+    public Button backButton;
+
     private int count;
 
     private BackgroundTile[,] allTiles;
@@ -25,7 +28,10 @@ public class Board : MonoBehaviour
         setUp();
 
         count = 0;
-        countText.text = "Score: " + count.ToString(); 
+        countText.text = "Score: " + count.ToString();
+
+        backButton.gameObject.SetActive(false);
+        youWin.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -204,9 +210,9 @@ public class Board : MonoBehaviour
         {
             IsWin.Instance.AddWin();
             IsWin.Instance.mansionWin = true;
-            
+            youWin.gameObject.SetActive(true);
+            backButton.gameObject.SetActive(true);
             Debug.Log("Kill me.");
         }
     }
-
 }

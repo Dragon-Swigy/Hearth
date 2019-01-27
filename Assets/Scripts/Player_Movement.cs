@@ -11,7 +11,7 @@ public class Player_Movement : MonoBehaviour
     public Image YouLose;
 
     public Text timerText;
-    public float startTime;
+    private float startTime;
     private bool end = false;
 
     private Rigidbody rb;
@@ -70,7 +70,6 @@ public class Player_Movement : MonoBehaviour
             Time.timeScale = 0f;
             Return.gameObject.SetActive(true);
             YouWin.gameObject.SetActive(true);
-
         }
     }
 }
