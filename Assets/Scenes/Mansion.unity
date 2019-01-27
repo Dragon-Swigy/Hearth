@@ -345,6 +345,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: 29487f784619a424d90ad1c6fb58a315, type: 3}
+      objectReference: {fileID: 2800000, guid: 9bd9525f1cce5874fbcb5449d4ec3b13, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab4eeee7092b7204fab9e7e7601146b7, type: 3}
