@@ -22,10 +22,22 @@ public class MapMenu : MonoBehaviour
         SceneManager.LoadScene("Cottage");
         
     }
-    public void Mansion() //assign to Mansion
+
+    public void Mansion() //assign to Cottage
+    {
+        Debug.Log("Cottage!");
+        SceneManager.LoadScene("Mansion");
+
+    }
+    public void TrapHouse() //assign to Mansion
     {
         Debug.Log("Mansion!");
-        SceneManager.LoadScene("test4");
+        SceneManager.LoadScene("TrapHouse");
+    }
+    public void Apartment() //assign to Mansion
+    {
+    
+        SceneManager.LoadScene("Apartment");
     }
 
     public void MapScreen() //assign to Mansion
