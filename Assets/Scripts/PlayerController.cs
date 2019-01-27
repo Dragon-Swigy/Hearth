@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
         countText.text = "Count: " + count.ToString();
         if (count >= 13)
         {
+            
             winText.text = "You Win!";
 
             StartCoroutine("Wait");
@@ -56,7 +57,7 @@ public class PlayerController : MonoBehaviour
     public IEnumerator Wait()
     {
         yield return new WaitForSeconds(2f);
-
+        IsWin.Instance.AddWin();
         SceneManager.LoadScene("MapScreen");
 
     }
