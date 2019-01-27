@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/OptionsMenu.unity
     guid: b1f7b418e2f5953488e786e639434793
   - enabled: 1
-    path: Assets/Scenes/CottageBio.unity
-    guid: 5143edce0df47964e953d5fefdfb08f9
+    path: Assets/Scenes/StartMenu.unity
+    guid: 48eabc3dc83ed5840a3e912744e8575e
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: ac8f3a4cf43bd5d478df4a18e591a349
+  - enabled: 1
+    path: Assets/Scenes/Cottage.unity
+    guid: ff98f3bdb56179c49b179e9a58a81060
   m_configObjects: {}
