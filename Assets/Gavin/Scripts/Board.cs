@@ -208,11 +208,14 @@ public class Board : MonoBehaviour
     {
         if (uhh)
         {
-            IsWin.Instance.AddWin();
+            
             IsWin.Instance.mansionWin = true;
             youWin.gameObject.SetActive(true);
             backButton.gameObject.SetActive(true);
             Debug.Log("Kill me.");
+            IsWin.Instance.AddWin();
+            IsWin.Instance.Mansion();
+
         }
     }
 }

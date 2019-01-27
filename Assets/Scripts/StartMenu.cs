@@ -17,4 +17,5 @@ public class StartMenu : MonoBehaviour
         Application.Quit();
 
     }
+
 }

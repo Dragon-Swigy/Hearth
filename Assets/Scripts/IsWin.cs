@@ -49,6 +49,15 @@ public class IsWin : MonoBehaviour
 
     }
 
+    public void startOver()
+    {
+            trapHouseWin = false;
+            cottageWin = false;
+            mansionWin = false;
+            apartmentWin = false;
+            winCount = 0;
+}
+
     private void OnDestroy()
     {
         m_referenceCount--;
@@ -62,13 +71,22 @@ public class IsWin : MonoBehaviour
     {
         winCount++;
     }
-
+    public void Mansion()
+    {
+        winCount--;
+     }
     // Update is called once per frame
     void Update()
     {
-        if (winCount ==  1)
+        if (mansionWin&&trapHouseWin&&apartmentWin&&cottageWin)
+        {
+            winCount += 1;
+        }
+
+        if (winCount ==  4)
         {
             Debug.Log("YEET");
+            SceneManager.LoadScene("Choice");
            
         }
     }
