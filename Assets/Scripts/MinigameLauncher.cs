@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MinigameLauncher : MonoBehaviour
 {
+    void Start()
+    {
+        Time.timeScale = 0f;
+    }
+
     public void MazeLaunch()
-   {
+    {
         Debug.Log("Cottage!");
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Maze_Game");
         
     }
@@ -15,7 +21,17 @@ public class MinigameLauncher : MonoBehaviour
     public void PairLaunch()
     {
         Debug.Log("Cottage!");
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Pairs_Game");
 
     }
+
+    public void RollABallLaunch()
+    {
+        Debug.Log("Cottage!");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Roll-A-Ball");
+
+    }
+
 }

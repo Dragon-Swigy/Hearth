@@ -28,12 +28,17 @@ public class Pairs : MonoBehaviour
     private bool m2 = false;
     private bool m3 = false;
     private bool gameOver = false;
+    private bool winGame = false;
 
     private int uncovered;
     private int counter;
+    public int wimCheck;
 
     void Start()
     {
+        m1 = false;
+        m2 = false;
+        m3 = false;
         uncovered = 0;
         counter = 12;
         clickCount.text = "";
@@ -223,13 +228,20 @@ public class Pairs : MonoBehaviour
 
     public void win()
     {
-        //Debug.Log(m1);
-        //Debug.Log(m2);
-        if(m1 && m2 && m3)
+        if (!winGame)
         {
-            Return.gameObject.SetActive(true);
-            YouWin.gameObject.SetActive(true);
+            
+            //Debug.Log(m1);
+            //Debug.Log(m2);
+            if (m1 && m2 && m3)
+            {
+                IsWin.Instance.AddWin();
+                Return.gameObject.SetActive(true);
+                YouWin.gameObject.SetActive(true);
+                winGame = true;
+            }
         }
+        
     }
 
     public void lose()
