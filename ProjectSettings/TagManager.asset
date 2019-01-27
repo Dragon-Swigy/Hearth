@@ -11,6 +11,8 @@ TagManager:
   - Green
   - Purple
   - Player Camera
+  - Pickup
+  - GameManager
   layers:
   - Default
   - TransparentFX

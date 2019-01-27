@@ -8,7 +8,7 @@ public class StartMenu : MonoBehaviour
     // Start is called before the first frame update
     public void PlayGame () //assign this to the "start" button
     {
-        SceneManager.LoadScene("MapScreen");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame() //assign this to the "log out" button

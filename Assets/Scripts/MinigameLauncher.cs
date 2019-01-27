@@ -21,7 +21,17 @@ public class MinigameLauncher : MonoBehaviour
     public void PairLaunch()
     {
         Debug.Log("Cottage!");
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Pairs_Game");
 
     }
+
+    public void RollABallLaunch()
+    {
+        Debug.Log("Cottage!");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Roll-A-Ball");
+
+    }
+
 }
