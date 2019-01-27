@@ -334,19 +334,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Our favorite \nTeam Leader:\n\tKameron King\n\nProgrammers:\n\tKameron
-    King\n\tGavin\n\tLuis\n\nArtists:\n\tChannon\n\tCrystal Arnold\n\tDustin\n\tLukas
-    Dush\n\tKenzie?\n\tKorenna\n\t\nMusic:\n\t\"Too Cool\" Kevin MacLeod (incompetech.com)\r\nLicensed
-    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Chill Wave\" Kevin
+    King\n\tGavin Lacalle\n\tLuis Hernandez\n\nArtists:\n\tChannon Hogan\n\tCrystal
+    Arnold\n\tDustin Proffit\n\tLukas Dush\n\tKenzie Glass\n\tKorenna Goodrick\n\t\nMusic:\n\t\"Too
+    Cool\" Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By
+    Attribution 3.0 License\r\n\r\n\t\"Chill Wave\" Kevin MacLeod (incompetech.com)\r\nLicensed
+    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Angel Share\" Kevin
     MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0
-    License\r\n\r\n\t\"Angel Share\" Kevin MacLeod (incompetech.com)\r\nLicensed under
-    Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Master Disorder\" Kevin
-    MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0
-    License\r\n\r\n\t\"Gymnopedie No. 1\" Kevin MacLeod (incompetech.com)\r\nLicensed
-    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Fretless\" Kevin
-    MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0
-    License\r\n\r\n\t\"Land of the Dead\" Kevin MacLeod (incompetech.com)\r\nLicensed
-    under Creative Commons: By Attribution 3.0 License\r\n\r\n\r\n\t\u201CSummer\u201D
-    \u201CClear Day\u201D \u201CThe Lounge\u201D \u201CLove\u201D by Bensound\r\n"
+    License\r\n\r\n\t\"Master Disorder\" Kevin MacLeod (incompetech.com)\r\nLicensed
+    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Gymnopedie No. 1\"
+    Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution
+    3.0 License\r\n\r\n\t\"Fretless\" Kevin MacLeod (incompetech.com)\r\nLicensed
+    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Land of the Dead\"
+    Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution
+    3.0 License\r\n\r\n\r\n\t\u201CSummer\u201D \u201CClear Day\u201D \u201CThe Lounge\u201D
+    \u201CLove\u201D by Bensound\r\n"
 --- !u!222 &352276788
 CanvasRenderer:
   m_ObjectHideFlags: 0
