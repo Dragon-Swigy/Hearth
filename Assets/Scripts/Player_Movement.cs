@@ -20,7 +20,7 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        startTime = 3;
+        startTime = 60;
 
         Return.gameObject.SetActive(false);
         YouWin.gameObject.SetActive(false);
