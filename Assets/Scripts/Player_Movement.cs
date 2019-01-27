@@ -18,14 +18,16 @@ public class Player_Movement : MonoBehaviour
     void awake()
     {
         Time.timeScale = 0f;
+        startTime = 60;
     }
 
     // Use this for initialization
     void Start()
     {
+        Time.timeScale = 1f;
         Debug.Log("Maze_Start");
         startTime = 60;
-        Time.timeScale = 1f;
+        
         rb = GetComponent<Rigidbody>();
 
         Return.gameObject.SetActive(false);
@@ -47,10 +49,12 @@ public class Player_Movement : MonoBehaviour
 
         transform.Translate(new Vector3(-move_Vertical, 0f, move_Horizontal) * Time.deltaTime * speed);
 
+        /*
         if (t == 0)
         {
             lose();
         }
+        */
     }
 
     public void lose()
