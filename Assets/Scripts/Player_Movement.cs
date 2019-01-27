@@ -66,6 +66,7 @@ public class Player_Movement : MonoBehaviour
         if (other.gameObject.CompareTag("Finish"))
         {
             IsWin.Instance.AddWin();
+            IsWin.Instance.cottageWin = true;
             Time.timeScale = 0f;
             Return.gameObject.SetActive(true);
             YouWin.gameObject.SetActive(true);

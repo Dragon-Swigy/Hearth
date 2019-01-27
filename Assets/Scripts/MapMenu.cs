@@ -1,10 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MapMenu : MonoBehaviour
 {
+    public Button trapHouse;
+    public Button apartmentHouse;
+    public Button cottageHouse;
+    //public Button mansionHouse;
+
+    void Update()
+    {
+        trapHouse.interactable = !IsWin.Instance.trapHouseWin;
+        apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
+        cottageHouse.interactable = !IsWin.Instance.cottageWin;
+        //mansionHouse.interactable = !Is.Win.Instance.mansionWin
+    }
+    
     // Start is called before the first frame update
     public void OptionsMenu() //assign this to the "start" button
     {

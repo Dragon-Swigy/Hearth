@@ -12,10 +12,10 @@ public class IsWin : MonoBehaviour
     //dialogue played
     //add to win counter
     //When wincount = 4 cue Choicce scene
-    bool trapHouseWin = false;
-    bool cottageWin = false;
-    bool mansionWin = false;
-    bool apartmentWin = false;
+    public bool trapHouseWin = false;
+    public bool cottageWin = false;
+    public bool mansionWin = false;
+    public bool apartmentWin = false;
     public int winCount = 0;
     public bool startup = false;
     public int x;

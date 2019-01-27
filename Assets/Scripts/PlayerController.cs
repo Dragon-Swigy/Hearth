@@ -52,7 +52,9 @@ public class PlayerController : MonoBehaviour
             
             winText.text = "You Win!";
             IsWin.Instance.AddWin();
+            IsWin.Instance.trapHouseWin = true;
             StartCoroutine("Wait");
+
             
 
         }
