@@ -13,6 +13,7 @@ public class Board : MonoBehaviour
     public Text countText;
 
     private int count;
+    public bool uhh = false;
 
     private BackgroundTile[,] allTiles;
     public GameObject[,] allDots;
@@ -94,7 +95,7 @@ public class Board : MonoBehaviour
             Destroy(allDots[column, row]);
             count++;
             countText.text = "Score: " + count.ToString();
-            if (count >= 100)
+            if (count >= 3)
             {
                 winCon();
             }
@@ -191,9 +192,14 @@ public class Board : MonoBehaviour
 
     void winCon()
     {
-        IsWin.Instance.AddWin();
-        IsWin.Instance.mansionWin = true;
-        Debug.Log("Kill me.");
+        if (!uhh)
+        {
+            IsWin.Instance.AddWin();
+            IsWin.Instance.mansionWin = true;
+            
+            Debug.Log("Kill me.");
+            uhh = true;
+        }
     }
 
 }

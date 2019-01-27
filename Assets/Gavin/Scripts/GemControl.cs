@@ -45,7 +45,10 @@ public class GemControl : MonoBehaviour
         heck.z = (Mathf.Sin(Time.time * speed) + 1.0f) / 2.0f * range + minSize;
         transform.localScale = heck;
 
-        findMatches();
+        if (!board.uhh)
+        {
+            findMatches();
+        }
         if (isMatched)
         {
             Renderer mySprite = GetComponent<Renderer>();

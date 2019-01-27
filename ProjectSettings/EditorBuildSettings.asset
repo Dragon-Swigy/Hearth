@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/MainScene.unity
+    path: 
     guid: fdb4039486ba99844a259fe141adf60b
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGames/Roll-A-Ball.unity
     guid: ea3057cdfd57e2b4abf25e96183643ec
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Match3Game.unity
+    guid: e185d665259f5784e8a79dbdeaf75011
   - enabled: 1
     path: Assets/Scenes/MiniGames/Pairs_Game.unity
     guid: 32d28ec7ae960944e80ce117b561a644

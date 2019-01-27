@@ -16,7 +16,7 @@ public class MapMenu : MonoBehaviour
         trapHouse.interactable = !IsWin.Instance.trapHouseWin;
         apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
         cottageHouse.interactable = !IsWin.Instance.cottageWin;
-        //mansionHouse.interactable = !Is.Win.Instance.mansionWin
+        mansionHouse.interactable = !IsWin.Instance.mansionWin;
     }
     
     // Start is called before the first frame update
@@ -60,10 +60,3 @@ public class MapMenu : MonoBehaviour
         SceneManager.LoadScene("MapScreen");
     }
 }
-
-    void Update()
-    {
-        trapHouse.interactable = !IsWin.Instance.trapHouseWin;
-        apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
-        cottageHouse.interactable = !IsWin.Instance.cottageWin;
-        mansionHouse.interactable = !IsWin.Instance.mansionWin;
