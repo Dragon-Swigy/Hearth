@@ -15,13 +15,18 @@ public class Player_Movement : MonoBehaviour
     private bool end = false;
 
     private Rigidbody rb;
+    void awake()
+    {
+        Time.timeScale = 0f;
+    }
 
     // Use this for initialization
     void Start()
     {
+        Debug.Log("Maze_Start");
+        startTime = 60;
         Time.timeScale = 1f;
         rb = GetComponent<Rigidbody>();
-        startTime = 60;
 
         Return.gameObject.SetActive(false);
         YouWin.gameObject.SetActive(false);
@@ -51,7 +56,7 @@ public class Player_Movement : MonoBehaviour
     public void lose()
     {
         Return.gameObject.SetActive(true);
-        timerText.color = Color.red;
+        timerText.color = Color.black;
         YouLose.gameObject.SetActive(true);
         Time.timeScale = 0f;
     }
