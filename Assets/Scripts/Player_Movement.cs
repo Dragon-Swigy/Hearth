@@ -19,6 +19,7 @@ public class Player_Movement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Time.timeScale = 1f;
         rb = GetComponent<Rigidbody>();
         startTime = 60;
 
