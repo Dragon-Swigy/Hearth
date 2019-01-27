@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Pairs : MonoBehaviour
+public class Matching_Game : MonoBehaviour
 {
     public Button Card1;
     public Button Card2;
@@ -13,9 +13,10 @@ public class Pairs : MonoBehaviour
     public Button Card6;
 
     public Button Return;
-    public Image YouWin;
     public Text clickCount;
-    public Image YouLose;
+    public Image YouWin;
+    //public Image YouLose;
+    public Text YouLose;
 
     private bool card1Uncovered = false;
     private bool card2Uncovered = false;
@@ -54,7 +55,7 @@ public class Pairs : MonoBehaviour
 
     public void Count()
     {
-        if(!gameOver)
+        if (!gameOver)
         {
             counter--;
         }
@@ -68,18 +69,16 @@ public class Pairs : MonoBehaviour
             card1Uncovered = true;
             uncovered++;
         }
-        
     }
 
     public void uncoverCard2()
     {
-        if (!gameOver)
+        if(!gameOver)
         {
             Card2.gameObject.SetActive(false);
             card2Uncovered = true;
             uncovered++;
         }
-            
     }
 
     public void uncoverCard3()
@@ -90,7 +89,6 @@ public class Pairs : MonoBehaviour
             card3Uncovered = true;
             uncovered++;
         }
-            
     }
 
     public void uncoverCard4()
@@ -101,109 +99,75 @@ public class Pairs : MonoBehaviour
             card4Uncovered = true;
             uncovered++;
         }
-            
     }
 
     public void uncoverCard5()
     {
-        if (!gameOver)
+        if(!gameOver)
         {
             Card5.gameObject.SetActive(false);
             card5Uncovered = true;
             uncovered++;
         }
-            
     }
 
     public void uncoverCard6()
     {
-        if (!gameOver)
+        if(!gameOver)
         {
             Card6.gameObject.SetActive(false);
             card6Uncovered = true;
             uncovered++;
         }
-            
     }
 
     public void matched()
     {
-        if(!m1)
+        if (!m1)
         {
             if (card1Uncovered && card3Uncovered)
             {
-
                 Destroy(Card1.gameObject);
                 Destroy(Card3.gameObject);
 
                 uncovered = 0;
                 m1 = true;
-                reset();
             }
         }
-
         if (!m2)
         {
-            if(card2Uncovered && card4Uncovered)
+            if (card2Uncovered && card4Uncovered)
             {
-                Debug.Log(card4Uncovered);
-                Debug.Log(card2Uncovered);
                 Destroy(Card2.gameObject);
                 Destroy(Card4.gameObject);
 
                 uncovered = 0;
                 m2 = true;
-                reset();
             }
         }
-        
-        if(!m3)
+        if (!m3)
         {
-            if(card6Uncovered && card5Uncovered)
+            if(card5Uncovered && card6Uncovered)
             {
-                Debug.Log(card5Uncovered);
-                Debug.Log(card6Uncovered);
                 Destroy(Card5.gameObject);
                 Destroy(Card6.gameObject);
 
                 uncovered = 0;
                 m3 = true;
-                reset();
             }
         }
     }
-    
 
     public void reset()
     {
         if(uncovered == 2)
         {
-            if(Card1 != null)
-            {
-                Card1.gameObject.SetActive(true);
-            }
-
-            if (Card2 != null)
-            {
-                Card2.gameObject.SetActive(true);
-            }
-            if (Card3 != null)
-            {
-                Card3.gameObject.SetActive(true);
-            }
-            if (Card4 != null)
-            {
-                Card4.gameObject.SetActive(true);
-            }
-            if (Card5 != null)
-            {
-                Card5.gameObject.SetActive(true);
-            }
-            if (Card6 != null)
-            {
-                Card6.gameObject.SetActive(true);
-            }
-
+            Card1.gameObject.SetActive(true);
+            Card2.gameObject.SetActive(true);
+            Card3.gameObject.SetActive(true);
+            Card4.gameObject.SetActive(true);
+            Card5.gameObject.SetActive(true);
+            Card6.gameObject.SetActive(true);
 
             card1Uncovered = false;
             card2Uncovered = false;
@@ -223,8 +187,6 @@ public class Pairs : MonoBehaviour
 
     public void win()
     {
-        //Debug.Log(m1);
-        //Debug.Log(m2);
         if(m1 && m2 && m3)
         {
             Return.gameObject.SetActive(true);
@@ -242,5 +204,4 @@ public class Pairs : MonoBehaviour
             gameOver = true;
         }
     }
-
 }
