@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Pairs : MonoBehaviour
 {
@@ -32,7 +33,6 @@ public class Pairs : MonoBehaviour
 
     private int uncovered;
     private int counter;
-    public int wimCheck;
 
     void Start()
     {
@@ -183,7 +183,7 @@ public class Pairs : MonoBehaviour
     {
         if(uncovered == 2)
         {
-            if(Card1 != null)
+            if (Card1 != null)
             {
                 Card1.gameObject.SetActive(true);
             }
@@ -250,10 +250,17 @@ public class Pairs : MonoBehaviour
         if(counter == 0)
         {
             YouLose.gameObject.SetActive(true);
-            Return.gameObject.SetActive(true);
-
             gameOver = true;
+
+            StartCoroutine("Wait");
         }
     }
 
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2f);
+
+        SceneManager.LoadScene("MapScreen");
+
+    }
 }
