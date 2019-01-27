@@ -34,4 +34,12 @@ public class MinigameLauncher : MonoBehaviour
 
     }
 
+
+    public void Match3Launch()
+    {
+        Debug.Log("Match3!");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Match3Game");
+
+    }
 }

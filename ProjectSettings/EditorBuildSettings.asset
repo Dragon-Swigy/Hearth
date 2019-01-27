@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/MainScene.unity
+    path: 
     guid: fdb4039486ba99844a259fe141adf60b
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
@@ -36,8 +36,23 @@ EditorBuildSettings:
     path: Assets/Scenes/TrapHouse.unity
     guid: 98dd5bed4175d5649b61614513610604
   - enabled: 1
+    path: Assets/Scenes/Endings/ApartmentEnd.unity
+    guid: 1255e9d8f7dba3b449981744fbd44478
+  - enabled: 1
+    path: Assets/Scenes/Endings/CottageEnd.unity
+    guid: 94fefb13c4c88e54c84cfe1f8d87f707
+  - enabled: 1
+    path: Assets/Scenes/Endings/MansionEnd.unity
+    guid: 30cad762faae51d4cb509c63c63646c3
+  - enabled: 1
+    path: Assets/Scenes/Endings/TrapEnd.unity
+    guid: c3e5cd147daaf1f47bb44d8199f91656
+  - enabled: 1
     path: Assets/Scenes/MiniGames/Roll-A-Ball.unity
     guid: ea3057cdfd57e2b4abf25e96183643ec
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Match3Game.unity
+    guid: e185d665259f5784e8a79dbdeaf75011
   - enabled: 1
     path: Assets/Scenes/MiniGames/Pairs_Game.unity
     guid: 32d28ec7ae960944e80ce117b561a644

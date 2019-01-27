@@ -34,7 +34,7 @@ public class IsWin : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this  );
 
         m_referenceCount++;
         if (m_referenceCount > 1)
