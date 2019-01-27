@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mary Jay the Trap House
+  m_Text: Micah the Trap House
 --- !u!222 &202391546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1052,6 +1052,11 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 3475725559579111951, guid: a1110ea3a31c76645afdfba82b721e5d,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 5bf2214aabca61246ba8ec6aaf09f568, type: 3}
     - target: {fileID: 9122507637981578074, guid: a1110ea3a31c76645afdfba82b721e5d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1062,11 +1067,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2049002720}
-    - target: {fileID: 3475725559579111951, guid: a1110ea3a31c76645afdfba82b721e5d,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 5bf2214aabca61246ba8ec6aaf09f568, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1110ea3a31c76645afdfba82b721e5d, type: 3}
 --- !u!114 &2049002720 stripped
