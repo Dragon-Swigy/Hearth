@@ -54,9 +54,6 @@ public class PlayerController : MonoBehaviour
             IsWin.Instance.AddWin();
             IsWin.Instance.trapHouseWin = true;
             StartCoroutine("Wait");
-
-            
-
         }
     }
 
