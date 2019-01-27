@@ -28,6 +28,14 @@ public class Board : MonoBehaviour
         countText.text = "Score: " + count.ToString(); 
     }
 
+    private void Update()
+    {
+        if (uhh)
+        {
+            winCon();
+        }
+    }
+
     private void setUp()
     {
         for (int i = 0;i < width; i++) 
@@ -97,7 +105,7 @@ public class Board : MonoBehaviour
             countText.text = "Score: " + count.ToString();
             if (count >= 3)
             {
-                winCon();
+                uhh = true;
             }
             allDots[column, row] = null;
         }
@@ -109,7 +117,7 @@ public class Board : MonoBehaviour
         {
             for (int j = 0; j < height; j++)
             {
-                if (allDots[i, j] != null)
+                if (allDots[i, j] != null && !uhh)
                 {
                     destroyMatchesAt(i, j);
                 }
@@ -192,13 +200,12 @@ public class Board : MonoBehaviour
 
     void winCon()
     {
-        if (!uhh)
+        if (uhh)
         {
             IsWin.Instance.AddWin();
             IsWin.Instance.mansionWin = true;
             
             Debug.Log("Kill me.");
-            uhh = true;
         }
     }
 
