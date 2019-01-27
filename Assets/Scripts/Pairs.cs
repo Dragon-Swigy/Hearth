@@ -34,6 +34,9 @@ public class Pairs : MonoBehaviour
 
     void Start()
     {
+        m1 = false;
+        m2 = false;
+        m3 = false;
         uncovered = 0;
         counter = 12;
         clickCount.text = "";
