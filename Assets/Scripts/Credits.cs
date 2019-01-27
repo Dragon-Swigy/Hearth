@@ -16,6 +16,12 @@ public class Credits : MonoBehaviour
         SceneManager.LoadScene("Credits_Final");
     }
 
+    public void main_Menu()
+    {
+        Debug.Log("mainmenu");
+        SceneManager.LoadScene("StartScreen");
+    }
+
     public void QuitGame() //assign this to the "log out" button
     {
         Debug.Log("Quit");

@@ -707,7 +707,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 844522632}
-        m_MethodName: QuitGame
+        m_MethodName: main_Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -739,7 +739,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 98ae8ca3f5bc2434d9c7a97b1f0b7bbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7dab5a02871d1b14dbaf3602d0476f91, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
