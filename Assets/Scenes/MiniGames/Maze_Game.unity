@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3487,7 +3487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 03d9f7220716ac441adcdd315cfab257, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.73
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 03d9f7220716ac441adcdd315cfab257, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3495,7 +3495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 03d9f7220716ac441adcdd315cfab257, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 45.31
+      value: -45.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 03d9f7220716ac441adcdd315cfab257, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9916,7 +9916,6 @@ MonoBehaviour:
   YouWin: {fileID: 970537450}
   YouLose: {fileID: 860232601}
   timerText: {fileID: 2025323669}
-  startTime: 0
 --- !u!54 &1319960567
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12037,7 +12036,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1686785349
 PrefabInstance:
