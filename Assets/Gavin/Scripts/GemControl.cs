@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class GemControl : MonoBehaviour
 {
-    public MiniGameFlow miniGameFlow;
-    public int row;
-    public int col;
+    private Vector2 firstTouchPosition;
+    private Vector2 finalTouchPosition;
+
+    public float swipAngle = 0;
 
     void OnMouseDown()
     {
-        if (MiniGameFlow.lockDelay == "n") {
-            MiniGameFlow.destroyedGemX = transform.position.x;
-            miniGameFlow.findCombo(this);
-            //MiniGameFlow.lockDelay = "y";
-        }
+        firstTouchPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,-10));
+        Debug.Log(firstTouchPosition);
     }
 
-  
+    void OnMouseUp()
+    {
+        finalTouchPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10));
+        calculateAngle();
+    }
+
+    void calculateAngle()
+    {
+        swipAngle = Mathf.Atan2(finalTouchPosition.y - firstTouchPosition.y, finalTouchPosition.x - firstTouchPosition.x) * 180 / Mathf.PI;
+        Debug.Log(swipAngle);
+    }
 }

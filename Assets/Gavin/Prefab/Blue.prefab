@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 4728217778340626428}
   - component: {fileID: 3898669761443488382}
   - component: {fileID: 4774601994328706716}
-  - component: {fileID: 7490731002488849466}
-  - component: {fileID: 8717140281883449719}
   - component: {fileID: 2595826655565460048}
+  - component: {fileID: 5046832676232386370}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Blue
@@ -80,35 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7490731002488849466
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8610155497289690565}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0196, y: 0.0196, z: 0.0196}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8717140281883449719
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8610155497289690565}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 2
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
 --- !u!114 &2595826655565460048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +91,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cc7558f3eee614fb1f524115f3f57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGameFlow: {fileID: 0}
+  row: 0
+  col: 0
+--- !u!65 &5046832676232386370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610155497289690565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010000003, y: 0.012723763, z: 0.01429152}
+  m_Center: {x: 0, y: 0, z: 0}
