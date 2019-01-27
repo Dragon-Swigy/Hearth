@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MinigameLauncher : MonoBehaviour
 {
+    void Start()
+    {
+        Time.timeScale = 0f;
+    }
+
     public void MazeLaunch()
-   {
+    {
         Debug.Log("Cottage!");
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Maze_Game");
         
     }
