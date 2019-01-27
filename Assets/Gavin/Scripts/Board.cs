@@ -109,7 +109,7 @@ public class Board : MonoBehaviour
             Destroy(allDots[column, row]);
             count++;
             countText.text = "Score: " + count.ToString();
-            if (count >= 3)
+            if (count >= 100)
             {
                 uhh = true;
             }
