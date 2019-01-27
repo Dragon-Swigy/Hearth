@@ -1052,6 +1052,16 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 9122507637981578074, guid: a1110ea3a31c76645afdfba82b721e5d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MazeLaunch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122507637981578074, guid: a1110ea3a31c76645afdfba82b721e5d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2049002720}
     - target: {fileID: 3475725559579111951, guid: a1110ea3a31c76645afdfba82b721e5d,
         type: 3}
       propertyPath: m_Texture
@@ -1059,3 +1069,15 @@ PrefabInstance:
       objectReference: {fileID: 2800000, guid: 5bf2214aabca61246ba8ec6aaf09f568, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1110ea3a31c76645afdfba82b721e5d, type: 3}
+--- !u!114 &2049002720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5899638163949454955, guid: a1110ea3a31c76645afdfba82b721e5d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2049002719}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daef4e4d01d721d40996165ebb3acf5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

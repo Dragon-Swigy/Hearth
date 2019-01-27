@@ -11,4 +11,11 @@ public class MinigameLauncher : MonoBehaviour
         SceneManager.LoadScene("Maze_Game");
         
     }
+
+    public void PairLaunch()
+    {
+        Debug.Log("Cottage!");
+        SceneManager.LoadScene("Pairs_Game");
+
+    }
 }
