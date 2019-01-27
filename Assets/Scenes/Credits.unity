@@ -336,14 +336,17 @@ MonoBehaviour:
   m_Text: "Our favorite \nTeam Leader:\n\tKameron King\n\nProgrammers:\n\tKameron
     King\n\tGavin\n\tLuis\n\nArtists:\n\tChannon\n\tCrystal Arnold\n\tDustin\n\tLukas
     Dush\n\tKenzie?\n\tKorenna\n\t\nMusic:\n\t\"Too Cool\" Kevin MacLeod (incompetech.com)\r\nLicensed
-    under Creative Commons: By Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\r\n\"Chill
-    Wave\" Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By
-    Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\r\n\"Angel
-    Share\" Kevin MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By
-    Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n\r\n\"Master
-    Disorder\" Kevin MacLeod (incompetech.com)\r\n\n\u201CSummer\u201D \u201CClear
-    Day\u201D \u201CThe Lounge\u201D \u201CLove\u201D by Bensound\nLicensed under
-    Creative Commons: By Attribution 3.0 License\r\nhttp://creativecommons.org/licenses/by/3.0/\r\n"
+    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Chill Wave\" Kevin
+    MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0
+    License\r\n\r\n\t\"Angel Share\" Kevin MacLeod (incompetech.com)\r\nLicensed under
+    Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Master Disorder\" Kevin
+    MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0
+    License\r\n\r\n\t\"Gymnopedie No. 1\" Kevin MacLeod (incompetech.com)\r\nLicensed
+    under Creative Commons: By Attribution 3.0 License\r\n\r\n\t\"Fretless\" Kevin
+    MacLeod (incompetech.com)\r\nLicensed under Creative Commons: By Attribution 3.0
+    License\r\n\r\n\t\"Land of the Dead\" Kevin MacLeod (incompetech.com)\r\nLicensed
+    under Creative Commons: By Attribution 3.0 License\r\n\r\n\r\n\t\u201CSummer\u201D
+    \u201CClear Day\u201D \u201CThe Lounge\u201D \u201CLove\u201D by Bensound\r\n"
 --- !u!222 &352276788
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -651,14 +654,14 @@ RectTransform:
   m_GameObject: {fileID: 754400616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 844522631}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -179}
+  m_AnchoredPosition: {x: 1.96, y: -209.5}
   m_SizeDelta: {x: -1106, y: -390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754400618
