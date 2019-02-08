@@ -56,7 +56,7 @@ public class IsWin : MonoBehaviour
             mansionWin = false;
             apartmentWin = false;
             winCount = 0;
-}
+    }
 
     private void OnDestroy()
     {
@@ -74,7 +74,7 @@ public class IsWin : MonoBehaviour
     public void Mansion()
     {
         winCount--;
-     }
+    }
     // Update is called once per frame
     void Update()
     {

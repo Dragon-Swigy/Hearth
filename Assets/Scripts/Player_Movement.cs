@@ -6,27 +6,22 @@ using UnityEngine.UI;
 public class Player_Movement : MonoBehaviour
 {
     public float speed;
+    private float timeDown;
     public Button Return;
     public Image YouWin;
     public Image YouLose;
 
     public Text timerText;
-    private float startTime;
-    private bool end = false;
+    private float startTime;    
 
     private Rigidbody rb;
-    void awake()
-    {
-        Time.timeScale = 0f;
-        startTime = 60;
-    }
 
     // Use this for initialization
     void Start()
     {
-        Time.timeScale = 1f;
         Debug.Log("Maze_Start");
-        startTime = 60;
+        startTime = 120;
+        timeDown = startTime;
         
         rb = GetComponent<Rigidbody>();
 
@@ -37,11 +32,18 @@ public class Player_Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float t = -Time.time + startTime;
+        if (timeDown >= 0)
+        {
+            timeDown -= Time.deltaTime;
 
-        string seconds = (t % 60).ToString("f0");
+            string seconds = (timeDown % 120).ToString("f0");
 
-        timerText.text = seconds;
+            timerText.text = seconds;
+        }
+        else
+        {
+            lose();
+        }
         
 
         float move_Horizontal = Input.GetAxis("Horizontal");
@@ -49,12 +51,6 @@ public class Player_Movement : MonoBehaviour
 
         transform.Translate(new Vector3(-move_Vertical, 0f, move_Horizontal) * Time.deltaTime * speed);
 
-        /*
-        if (t == 0)
-        {
-            lose();
-        }
-        */
     }
 
     public void lose()
