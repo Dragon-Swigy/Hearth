@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         
-        SceneManager.LoadScene("MapScreen");
+        SceneManager.LoadScene("Main");
 
     }
 }

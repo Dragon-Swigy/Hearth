@@ -16,11 +16,15 @@ public class IsWin : MonoBehaviour
     public bool cottageWin = false;
     public bool mansionWin = false;
     public bool apartmentWin = false;
-    public int winCount = 0;
     public bool startup = false;
+
+    public int winCount = 0;
     public int x;
 
-    private static IsWin  m_instance;
+    //public GameObject startMenuUI;
+    // public GameObject mapMenuUI;
+
+    private static IsWin m_instance;
 
     public static IsWin Instance
     {
@@ -34,7 +38,7 @@ public class IsWin : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this  );
+        DontDestroyOnLoad(this);
 
         m_referenceCount++;
         if (m_referenceCount > 1)
@@ -49,11 +53,14 @@ public class IsWin : MonoBehaviour
 
     public void startOver()
     {
-            trapHouseWin = false;
-            cottageWin = false;
-            mansionWin = false;
-            apartmentWin = false;
-            winCount = 0;
+        trapHouseWin = false;
+        cottageWin = false;
+        mansionWin = false;
+        apartmentWin = false;
+        winCount = 0;
+
+        //startMenuUI.SetActive(true);
+        //mapMenuUI.SetActive(false);
     }
 
     private void OnDestroy()
@@ -64,7 +71,7 @@ public class IsWin : MonoBehaviour
             m_instance = null;
         }
     }
-    
+
     public void AddWin()
     {
         winCount++;
@@ -77,16 +84,21 @@ public class IsWin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mansionWin&&trapHouseWin&&apartmentWin&&cottageWin)
+        if (mansionWin && trapHouseWin && apartmentWin && cottageWin)
         {
             winCount += 1;
+        }
+
+        if (mansionWin || trapHouseWin || apartmentWin || cottageWin)
+        {
+            //startMenuUI.SetActive(false);
+            //mapMenuUI.SetActive(true);
         }
 
         if (winCount ==  4)
         {
             Debug.Log("YEET");
             SceneManager.LoadScene("Choice");
-           
         }
     }
 }

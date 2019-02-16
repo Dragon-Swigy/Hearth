@@ -7,7 +7,7 @@ public class Quit_Minigame : MonoBehaviour
 {
     public void QuitMinigame ()
     {
-        SceneManager.LoadScene("MapScreen");
+        SceneManager.LoadScene("Main");
     }
 }
 

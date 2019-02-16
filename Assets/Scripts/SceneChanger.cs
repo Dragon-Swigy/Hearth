@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0f;
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("Main");
     }
     
 }

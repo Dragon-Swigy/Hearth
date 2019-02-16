@@ -13,12 +13,10 @@ public class MainScript : MonoBehaviour
 
     void Update()
     {
-        /*
         trapHouse.interactable = !IsWin.Instance.trapHouseWin;
         apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
         cottageHouse.interactable = !IsWin.Instance.cottageWin;
         mansionHouse.interactable = !IsWin.Instance.mansionWin;
-        */
     }
 
     public void Victorian() //assign to Victorian House
@@ -30,25 +28,29 @@ public class MainScript : MonoBehaviour
     public void Cottage() //assign to Cottage
     {
         Debug.Log("Cottage!");
-        SceneManager.LoadScene("Cottage");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Maze_Game");
     }
 
     public void Mansion() //assign to Cottage
     {
         Debug.Log("Mansion!");
-        SceneManager.LoadScene("Mansion");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Match3Game");
     }
 
     public void TrapHouse() //assign to Mansion
     {
         Debug.Log("TrapHouse!");
-        SceneManager.LoadScene("TrapHouse");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Roll-A-Ball");
     }
 
     public void Apartment() //assign to Mansion
     {
         Debug.Log("Apartment!");
-        SceneManager.LoadScene("Apartment");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Pairs_Game");
     }
 
     public void GothHouse()
