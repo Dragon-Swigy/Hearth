@@ -11,7 +11,7 @@ public class IsWin : MonoBehaviour
     //disable them after visit
     //dialogue played
     //add to win counter
-    //When wincount = 4 cue Choicce scene
+    //When wincount = 4 cue Choice scene
     public bool trapHouseWin = false;
     public bool cottageWin = false;
     public bool mansionWin = false;
@@ -45,8 +45,6 @@ public class IsWin : MonoBehaviour
         }
 
         m_instance = this;
-        
-
     }
 
     public void startOver()
@@ -75,6 +73,7 @@ public class IsWin : MonoBehaviour
     {
         winCount--;
     }
+
     // Update is called once per frame
     void Update()
     {

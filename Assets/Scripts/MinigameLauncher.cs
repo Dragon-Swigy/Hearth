@@ -15,7 +15,6 @@ public class MinigameLauncher : MonoBehaviour
         Debug.Log("Cottage!");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Maze_Game");
-        
     }
 
     public void PairLaunch()
@@ -23,7 +22,6 @@ public class MinigameLauncher : MonoBehaviour
         Debug.Log("Cottage!");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Pairs_Game");
-
     }
 
     public void RollABallLaunch()
@@ -31,7 +29,6 @@ public class MinigameLauncher : MonoBehaviour
         Debug.Log("Cottage!");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Roll-A-Ball");
-
     }
 
 
@@ -40,6 +37,5 @@ public class MinigameLauncher : MonoBehaviour
         Debug.Log("Match3!");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Match3Game");
-
     }
 }
