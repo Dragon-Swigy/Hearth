@@ -21,8 +21,9 @@ public class IsWin : MonoBehaviour
     public int winCount = 0;
     public int x;
 
-    //public GameObject startMenuUI;
-    // public GameObject mapMenuUI;
+    public GameObject startMenuUI;
+    public GameObject mapMenuUI;
+    public GameObject FinalScene;
 
     private static IsWin m_instance;
 
@@ -98,7 +99,9 @@ public class IsWin : MonoBehaviour
         if (winCount ==  4)
         {
             Debug.Log("YEET");
-            SceneManager.LoadScene("Choice");
+            startMenuUI.SetActive(false);
+            mapMenuUI.SetActive(false);
+            FinalScene.SetActive(true);
         }
     }
 }
