@@ -69,6 +69,8 @@ public class HT_GameController : MonoBehaviour {
         {
             yield return new WaitForSeconds(2.0f);
             winText.SetActive(true);
+            IsWin.Instance.AddWin();
+            IsWin.Instance.gothicHouse = true;
         }
         else
         {

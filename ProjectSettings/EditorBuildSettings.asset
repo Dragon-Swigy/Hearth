@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/House_Scenes/Mansion.unity
     guid: b028610ff392feb4daccb6549e80e33d
   - enabled: 1
+    path: Assets/Scenes/MiniGames/Falling_Game.unity
+    guid: efdaf60f95cc44fc590b061685495823
+  - enabled: 1
     path: Assets/Scenes/House_Scenes/TrapHouse.unity
     guid: 98dd5bed4175d5649b61614513610604
   - enabled: 1

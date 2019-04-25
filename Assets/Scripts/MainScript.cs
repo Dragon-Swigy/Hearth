@@ -10,6 +10,7 @@ public class MainScript : MonoBehaviour
     public Button apartmentHouse;
     public Button cottageHouse;
     public Button mansionHouse;
+    public Button gothicHouse;
 
     void Update()
     {
@@ -17,6 +18,7 @@ public class MainScript : MonoBehaviour
         apartmentHouse.interactable = !IsWin.Instance.apartmentWin;
         cottageHouse.interactable = !IsWin.Instance.cottageWin;
         mansionHouse.interactable = !IsWin.Instance.mansionWin;
+        gothicHouse.interactable = !IsWin.Instance.mansionWin;
     }
 
     public void Victorian() //assign to Victorian House
@@ -56,7 +58,7 @@ public class MainScript : MonoBehaviour
     public void GothHouse()
     {
         Debug.Log("GothLady!");
-        //SceneManager.LoadScene("reeeeee");
+        SceneManager.LoadScene("Falling_Game");
     }
 
     public void QuitGame() //assign this to the "log out" button

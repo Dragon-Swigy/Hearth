@@ -16,6 +16,7 @@ public class IsWin : MonoBehaviour
     public bool cottageWin = false;
     public bool mansionWin = false;
     public bool apartmentWin = false;
+    public bool gothicHouse = false;
     public bool startup = false;
 
     public int winCount = 0;
@@ -58,6 +59,7 @@ public class IsWin : MonoBehaviour
         cottageWin = false;
         mansionWin = false;
         apartmentWin = false;
+        gothicHouse = false;
         winCount = 0;
 
         //startMenuUI.SetActive(true);
@@ -85,18 +87,18 @@ public class IsWin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mansionWin && trapHouseWin && apartmentWin && cottageWin)
+        if (mansionWin && trapHouseWin && apartmentWin && cottageWin && gothicHouse)
         {
             winCount += 1;
         }
 
-        if (mansionWin || trapHouseWin || apartmentWin || cottageWin)
+        if (mansionWin || trapHouseWin || apartmentWin || cottageWin || gothicHouse)
         {
             startMenuUI.SetActive(false);
             mapMenuUI.SetActive(true);
         }
 
-        if (winCount ==  4)
+        if (winCount ==  5)
         {
             Debug.Log("YEET");
             startMenuUI.SetActive(false);
