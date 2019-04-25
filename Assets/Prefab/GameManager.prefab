@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7520256452200240768}
   - component: {fileID: 7520256452200240770}
-  - component: {fileID: 7520256452200240769}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -44,15 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089fe1e70efa8df4a8b26754fcf107e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7520256452200240769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7520256452200240775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3b62a7a57ec914bbae47ca96d15679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  trapHouseWin: 0
+  cottageWin: 0
+  mansionWin: 0
+  apartmentWin: 0
+  startup: 0
+  winCount: 0
+  x: 0
+  startMenuUI: {fileID: 0}
+  mapMenuUI: {fileID: 0}
+  FinalScene: {fileID: 0}
