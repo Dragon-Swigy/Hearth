@@ -92,8 +92,8 @@ public class IsWin : MonoBehaviour
 
         if (mansionWin || trapHouseWin || apartmentWin || cottageWin)
         {
-            //startMenuUI.SetActive(false);
-            //mapMenuUI.SetActive(true);
+            startMenuUI.SetActive(false);
+            mapMenuUI.SetActive(true);
         }
 
         if (winCount ==  4)
